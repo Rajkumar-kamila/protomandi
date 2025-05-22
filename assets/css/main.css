@@ -2127,6 +2127,8 @@ label {
 .carausel-8-columns-cover .carausel-8-columns .card-1 {
   margin-right: 12px;
   margin-left: 12px;
+  margin-bottom: 30px;
+
 }
 
 .carausel-8-columns-cover .product-img {
@@ -2287,7 +2289,7 @@ label {
 
 .card-1:hover {
   background: #fff;
-  border: 1px solid #BCE3C9;
+  border: 1px solid #81a9d1;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
   -webkit-transition: 0.2s;
@@ -2296,13 +2298,13 @@ label {
 
 .card-1 figure {
   text-align: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .card-1 figure img {
   border-radius: 10px;
   display: inline-block;
-  max-width: 120px;
+  /* max-width: 120px; */
 }
 
 .card-1 h6 {
