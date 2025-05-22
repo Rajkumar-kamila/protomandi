@@ -16,6 +16,68 @@
         <!-- Template CSS -->
         <link rel="stylesheet" href="./assets/css/plugins/animate.min.css" />
         <link rel="stylesheet" href="./assets/css/main.css?v=4.0" />
+        <style>
+            .card-1 {
+                position: relative;
+            }
+
+            .tooltip-card {
+                position: absolute;
+                top: 0;
+                left: 110%; /* Appear to the right */
+                width: 220px;
+                background: #fff;
+                border: 1px solid #ddd;
+                padding: 10px;
+                z-index: 10;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.4s ease-in-out;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 6px;
+                transform: translateY(10px);
+            }
+
+            /* Arrow pointing to card */
+            .tooltip-arrow {
+                position: absolute;
+                top: 20px;
+                left: -10px;
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-right: 10px solid #fff;
+                filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, 0.1));
+            }
+
+            /* Show tooltip on hover */
+            .card-1:hover .tooltip-card {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0px);
+            }
+
+            .carausel-8-columns {
+                overflow: visible !important; /* override hidden if needed */
+                position: relative; /* ensure absolute tooltips position correctly */
+            }
+
+            /* When tooltip should appear on left */
+            .tooltip-left .tooltip-card {
+                left: auto;
+                right: 110%;
+            }
+
+            .tooltip-left .tooltip-arrow {
+                left: auto;
+                right: -10px;
+                border-right: none;
+                border-left: 10px solid #fff;
+                filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
+            }
+
+        </style>
     </head>
 
     <body>
@@ -159,11 +221,11 @@
                 <span>Grand opening, <strong>up to 15%</strong> off all items. Only <strong>3 days</strong> left</span>
             </div> -->
             
-            <div class="header-middle header-middle-ptb-1 d-none d-lg-block">
+            <div class="header-middle header-middle-ptb-1 d-none d-lg-block" style="background: #0a2946;">
                 <div class="container">
                     <div class="header-wrap">
                         <div class="logo logo-width-1">
-                            <a href="index.html"><img src="./assets/imgs/theme/logo.png" alt="logo" /></a>
+                            <a href="index.html"><img src="./assets/imgs/theme/logo.png" alt="logo" style="filter: brightness(0) invert(1);"/></a>
                         </div>
                         <div class="header-right">
                             <div class="search-style-2" style="justify-items: center;">
@@ -182,13 +244,13 @@
                             </div>
                             <div class="header-action-right">
                                 <div class="header-action-2">
-                                    <div class="search-location">
+                                    <!-- <div class="search-location">
                                         <form action="#">
                                             <select class="select-active">
                                                 <option>Order Tracking</option>
                                             </select>
                                         </form>
-                                    </div>
+                                    </div> -->
                                     <!-- <div class="header-action-icon-2">
                                         <a href="shop-compare.html">
                                             <img class="svgInject" alt="Nest" src="./assets/imgs/theme/icons/icon-compare.svg" />
@@ -205,10 +267,10 @@
                                     </div> -->
                                     <div class="header-action-icon-2">
                                         <a class="mini-cart-icon" href="shop-cart.html">
-                                            <img alt="Nest" src="./assets/imgs/theme/icons/icon-cart.svg" />
+                                            <img alt="Nest" src="./assets/imgs/theme/icons/icon-cart.svg" style="filter: brightness(0) invert(1);"/>
                                             <span class="pro-count blue">0</span>
                                         </a>
-                                        <a href="shop-cart.html"><span class="lable">Cart</span></a>
+                                        <a href="shop-cart.html"><span class="lable text-white">Cart</span></a>
                                         <div class="cart-dropdown-wrap cart-dropdown-hm2">
                                             <!-- <ul>
                                                 <li>
@@ -249,18 +311,18 @@
                                     </div>
                                     <div class="header-action-icon-2">
                                         <a href="page-account.html">
-                                            <img class="svgInject" alt="Nest" src="./assets/imgs/theme/icons/icon-user.svg" />
+                                            <img class="svgInject" alt="Nest" src="./assets/imgs/theme/icons/icon-user.svg" style="filter: brightness(0) invert(1);"/>
                                         </a>
-                                        <a href="page-account.html"><span class="lable ml-0">Account</span></a>
+                                        <a href="page-account.html"><span class="lable ml-0 text-white">Account</span></a>
                                         <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                             <ul>
                                                 <li>
-                                                    <a href="page-account.html"><i class="fi fi-rs-user mr-10"></i>My Account</a>
+                                                    <a href="#"><i class="fi fi-rs-user mr-10"></i>My Account</a>
                                                 </li>
                                                 <li>
-                                                    <a href="page-account.html"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a>
+                                                    <a href="#"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a>
                                                 </li>
-                                                <li>
+                                                <!-- <li>
                                                     <a href="page-account.html"><i class="fi fi-rs-label mr-10"></i>My Voucher</a>
                                                 </li>
                                                 <li>
@@ -268,7 +330,7 @@
                                                 </li>
                                                 <li>
                                                     <a href="page-account.html"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a>
-                                                </li>
+                                                </li> -->
                                                 <li>
                                                     <a href="page-login.html"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a>
                                                 </li>
@@ -281,11 +343,11 @@
                     </div>
                 </div>
             </div>
-            <div class="header-bottom header-bottom-bg-color sticky-bar">
+            <div class="header-bottom header-bottom-bg-color sticky-bar" >
                 <div class="container">
                     <div class="header-wrap header-space-between position-relative">
                         <div class="logo logo-width-1 d-block d-lg-none">
-                            <a href="index.html"><img src="./assets/imgs/theme/logo.png" alt="logo" /></a>
+                            <a href="index.html"><img src="./assets/imgs/theme/logo.png" class="w-80" alt="logo" /></a>
                         </div>
                         <div class="header-nav d-none d-lg-flex">
                             <!-- <div class="main-categori-wrap d-none d-lg-block">
@@ -402,9 +464,9 @@
                                         <li>
                                             <a href="#">Track Your Order</a>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <a href="#">Sell With Us!</a>
-                                        </li>
+                                        </li> -->
                                         <!-- <li>
                                             <a href="#">Vendors <i class="fi-rs-angle-down"></i></a>
                                             <ul class="sub-menu">
@@ -529,12 +591,12 @@
                         </div>
                         <div class="header-action-right d-block d-lg-none">
                             <div class="header-action-2">
-                                <div class="header-action-icon-2">
+                                <!-- <div class="header-action-icon-2">
                                     <a href="shop-wishlist.html">
                                         <img alt="Nest" src="./assets/imgs/theme/icons/icon-heart.svg" />
                                         <span class="pro-count white">4</span>
                                     </a>
-                                </div>
+                                </div> -->
                                 <div class="header-action-icon-2">
                                     <a class="mini-cart-icon" href="#">
                                         <img alt="Nest" src="./assets/imgs/theme/icons/icon-cart.svg" />
@@ -576,6 +638,33 @@
                                                 <a href="shop-checkout.html">Checkout</a>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="header-action-icon-2">
+                                    <a href="#">
+                                        <img class="svgInject" alt="Nest" src="./assets/imgs/theme/icons/icon-user.svg"/>
+                                    </a>
+                                    <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
+                                        <ul>
+                                            <li>
+                                                <a href="page-account.html"><i class="fi fi-rs-user mr-10"></i>My Account</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-account.html"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a>
+                                            </li>
+                                            <!-- <li>
+                                                <a href="page-account.html"><i class="fi fi-rs-label mr-10"></i>My Voucher</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-wishlist.html"><i class="fi fi-rs-heart mr-10"></i>My Wishlist</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-account.html"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a>
+                                            </li> -->
+                                            <li>
+                                                <a href="page-login.html"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -770,7 +859,7 @@
                 <div class="container">
                     <div class="home-slide-cover mt-30">
                         <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
-                            <div class="single-hero-slider single-animation-wrap" style="background-image: url(assets/imgs/slider/slider-1.png)">
+                            <div class="single-hero-slider single-animation-wrap" style="background-image: url(assets/imgs/slider/banner1.jpg)">
                                 <div class="slider-content">
                                     <h1 class="display-2 mb-40">
                                         Don’t miss amazing<br />
@@ -783,7 +872,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="single-hero-slider single-animation-wrap" style="background-image: url(assets/imgs/slider/slider-2.png)">
+                            <div class="single-hero-slider single-animation-wrap" style="background-image: url(assets/imgs/slider/banner2.jpg)">
                                 <div class="slider-content">
                                     <h1 class="display-2 mb-40">
                                         New Stock with<br />
@@ -802,59 +891,210 @@
                 </div>
             </section>
             <!--End hero slider-->
-        
-            <section class="text-center mb-50">
+            <section class="text-center popular-categories section-padding">
                 <h2 class="title style-3 mb-40">Our Offering?</h2>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-24">
-                        <div class="featured-card">
-                            <img class="w-50" src="assets/imgs/cnc-machining.svg" alt="" />
-                            <h4>CNC Machining</h4>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
+                <div class="container">
+                    <div class="section-title">
+                        <div class="slider-arrow slider-arrow-2 flex-right carausel-8-columns-arrow" id="carausel-8-columns-arrows"></div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-24">
-                        <div class="featured-card">
-                            <img class="w-50" src="assets/imgs/3d-printing.svg" alt="" />
-                            <h4>3D Printing</h4>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-24">
-                        <div class="featured-card">
-                            <img class="w-50" src="assets/imgs/sheet-metal.svg" alt="" />
-                            <h4>Sheet Metal & Pipe</h4>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-24">
-                        <div class="featured-card">
-                            <img class="w-50"  src="assets/imgs/screw.png" alt="" />
-                            <h4>Fasteners</h4>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-24">
-                        <div class="featured-card">
-                            <img class="w-50" src="assets/imgs/bearing.png" alt="" />
-                            <h4>Bearings & Bushings</h4>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-24">
-                        <div class="featured-card">
-                            <img class="w-50" src="assets/imgs/tool.png" alt="" />
-                            <h4>Tools</h4>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                    <div class="carausel-8-columns-cover position-relative">
+                        <div class="carausel-8-columns" id="carausel-8-columns">
+                            <div class="card-1">
+                                <figure class="img-hover-scale overflow-hidden">
+                                    <a href="shop-grid-right.html"><img src="assets/imgs/cnc-machining.svg" alt="" /></a>
+                                </figure>
+                                <h6>
+                                    <a href="shop-grid-right.html">CNC Machining</a>
+                                </h6>
+                                <!-- Tooltip Card -->
+                                <div class="tooltip-card">
+                                    <div class="tooltip-arrow"></div> <!-- Arrow -->
+                                    <div style="justify-items: center;">
+                                        <img src="assets/imgs/cnc.jpeg" class="w-50" alt="Tooltip Image">
+                                    </div>
+                                    <span class="fw-bolder">Custom Online CNC Machining Services</span>
+                                    <p>Instant quotes on custom metal and plastic machined parts prototypes and....</p>
+                                </div>
+                            </div>
+                            <div class="card-1">
+                                <figure class="img-hover-scale overflow-hidden">
+                                    <a href="shop-grid-right.html"><img src="assets/imgs/3d-printing.svg" alt="" /></a>
+                                </figure>
+                                <h6>
+                                    <a href="shop-grid-right.html">3D Printing</a>
+                                </h6>
+                                <!-- Tooltip Card -->
+                                <div class="tooltip-card">
+                                    <div class="tooltip-arrow"></div> <!-- Arrow -->
+                                    <div style="justify-items: center;">
+                                        <img src="assets/imgs/3d.jpeg" class="w-50" alt="Tooltip Image">
+                                    </div>
+                                    <span class="fw-bolder">Custom 3d Printing</span>
+                                    <p>Instant quotes on custom metal and plastic machined parts prototypes and....</p>
+                                </div>
+                            </div>
+                            <div class="card-1">
+                                <figure class="img-hover-scale overflow-hidden">
+                                    <a href="shop-grid-right.html"><img src="assets/imgs/sheet-metal.svg" alt="" /></a>
+                                </figure>
+                                <h6>
+                                    <a href="shop-grid-right.html">Sheet Metal & Pipe</a>
+                                </h6>
+                                <!-- Tooltip Card -->
+                                <div class="tooltip-card">
+                                    <div class="tooltip-arrow"></div> <!-- Arrow -->
+                                    <div style="justify-items: center;">
+                                        <img src="assets/imgs/3d.jpeg" class="w-50" alt="Tooltip Image">
+                                    </div>
+                                    <span class="fw-bolder">Sheet Metal Fabrication Services</span>
+                                    <p>Instant quotes on custom-formed sheet metal parts | Prototypes and production parts in days....</p>
+                                </div>
+                            </div>
+                            <div class="card-1">
+                                <figure class="img-hover-scale overflow-hidden">
+                                    <a href="shop-grid-right.html"><img src="assets/imgs/screw.png" alt="" /></a>
+                                </figure>
+                                <h6>
+                                    <a href="shop-grid-right.html">Fasteners</a>
+                                </h6>
+                                <!-- Tooltip Card -->
+                                <div class="tooltip-card">
+                                    <div class="tooltip-arrow"></div> <!-- Arrow -->
+                                    <div style="justify-items: center;">
+                                        <img src="assets/imgs/fasner.webp" class="w-50" alt="Tooltip Image">
+                                    </div>
+                                    <span class="fw-bolder">Fasteners Screws</span>
+                                    <p>Instant quotes on custom-formed sheet metal parts | Prototypes and production parts in days....</p>
+                                </div>
+                            </div>
+                            <div class="card-1">
+                                <figure class="img-hover-scale overflow-hidden">
+                                    <a href="shop-grid-right.html"><img src="assets/imgs/bearing.png" alt="" /></a>
+                                </figure>
+                                <h6>
+                                    <a href="shop-grid-right.html">Bearings</a>
+                                </h6>
+                                <!-- Tooltip Card -->
+                                <div class="tooltip-card">
+                                    <div class="tooltip-arrow"></div> <!-- Arrow -->
+                                    <div style="justify-items: center;">
+                                        <img src="assets/imgs/bearing.jpg" class="w-50" alt="Tooltip Image">
+                                    </div>
+                                    <span class="fw-bolder">Bearings Pack</span>
+                                    <p>Instant quotes on custom-formed sheet metal parts | Prototypes and production parts in days....</p>
+                                </div>
+                            </div>
+                            <div class="card-1">
+                                <figure class="img-hover-scale overflow-hidden">
+                                    <a href="shop-grid-right.html"><img src="assets/imgs/alimunium.png" alt="" /></a>
+                                </figure>
+                                <h6>
+                                    <a href="shop-grid-right.html">Aluminuum Profiles</a>
+                                </h6>
+                                <!-- Tooltip Card -->
+                                <div class="tooltip-card">
+                                    <div class="tooltip-arrow"></div> <!-- Arrow -->
+                                    <div style="justify-items: center;">
+                                        <img src="assets/imgs/aluminum.jpg" class="w-50" alt="Tooltip Image">
+                                    </div>
+                                    <span class="fw-bolder">Aluminuum Profiles</span>
+                                    <p>Instant quotes on custom-formed sheet metal parts | Prototypes and production parts in days....</p>
+                                </div>
+                            </div>
+                            <div class="card-1">
+                                <figure class="img-hover-scale overflow-hidden">
+                                    <a href="shop-grid-right.html"><img src="assets/imgs/safety.png" alt="" /></a>
+                                </figure>
+                                <h6>
+                                    <a href="shop-grid-right.html">Safety Equiptment</a>
+                                </h6>
+                                <!-- Tooltip Card -->
+                                <div class="tooltip-card">
+                                    <div class="tooltip-arrow"></div> <!-- Arrow -->
+                                    <div style="justify-items: center;">
+                                        <img src="assets/imgs/safetylikethis.jpeg" class="w-50" alt="Tooltip Image">
+                                    </div>
+                                    <span class="fw-bolder">Safety Equiptment</span>
+                                    <p>Instant quotes on custom-formed sheet metal parts | Prototypes and production parts in days....</p>
+                                </div>
+                            </div>
+                            <div class="card-1 tooltip-left">
+                                <figure class="img-hover-scale overflow-hidden">
+                                    <a href="shop-grid-right.html"><img src="assets/imgs/tool.png" alt="" /></a>
+                                </figure>
+                                <h6>
+                                    <a href="shop-grid-right.html">Tools</a>
+                                </h6>
+                                <!-- Tooltip Card -->
+                                <div class="tooltip-card">
+                                    <div class="tooltip-arrow"></div> <!-- Arrow -->
+                                    <div style="justify-items: center;">
+                                        <img src="assets/imgs/toolbg.jpeg" class="w-50" alt="Tooltip Image">
+                                    </div>
+                                    <span class="fw-bolder">Tools Equiptment</span>
+                                    <p>Instant quotes on custom-formed sheet metal parts | Prototypes and production parts in days....</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+        
+            <!-- <section class="text-center mb-50">
+                <h2 class="title style-3 mb-40">Our Offering?</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-24">
+                            <div class="featured-card">
+                                <img class="w-50" src="assets/imgs/cnc-machining.svg" alt="" />
+                                <h4>CNC Machining</h4>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-24">
+                            <div class="featured-card">
+                                <img class="w-50" src="assets/imgs/3d-printing.svg" alt="" />
+                                <h4>3D Printing</h4>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-24">
+                            <div class="featured-card">
+                                <img class="w-50" src="assets/imgs/sheet-metal.svg" alt="" />
+                                <h4>Sheet Metal & Pipe</h4>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-24">
+                            <div class="featured-card">
+                                <img class="w-50"  src="assets/imgs/screw.png" alt="" />
+                                <h4>Fasteners</h4>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-24">
+                            <div class="featured-card">
+                                <img class="w-50" src="assets/imgs/bearing.png" alt="" />
+                                <h4>Bearings & Bushings</h4>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-24">
+                            <div class="featured-card">
+                                <img class="w-50" src="assets/imgs/tool.png" alt="" />
+                                <h4>Tools</h4>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            
            
             <!--End banners-->
-            <section class="text-center product-tabs section-padding position-relative">
+            <section class="text-center product-tabs section-padding position-relative bg-grey">
                 <h2 class="title style-3 mb-40">Popular Products</h2>
-                <div class="container">
+                <div class="container ">
                     <div class="section-title style-2 wow animate__animated animate__fadeIn">
                         <!-- <h3>Popular Products</h3> -->
                         <!-- <ul class="nav nav-tabs links" id="myTab" role="tablist">
