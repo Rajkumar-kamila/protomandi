@@ -8392,7 +8392,7 @@ h6.post-title {
 }
 
 .header-style-1 .hotline p {
-  color: #0a2946 !important;
+  color: #fff !important;
 }
 
 .header-style-1 .main-categori-wrap > a span {
@@ -8450,7 +8450,7 @@ span.fi-rs-apps {
   display: inline-block;
   font-size: 16px;
   font-weight: 700;
-  color: #253D4E;
+  color: #fff;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -8461,7 +8461,7 @@ span.fi-rs-apps {
 }
 
 .main-menu > nav > ul > li > a.active {
-  color: #0a2946;
+  color: #fff;
 }
 
 .main-menu > nav > ul > li ul.sub-menu {
