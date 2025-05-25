@@ -10432,6 +10432,7 @@ textarea.is-invalid {
   justify-content: space-between;
   margin-top: 20px;
   padding: 0px 30px 30px;
+  justify-content: center;
 }
 .feature-product-items-two__details{
   justify-items: center;
