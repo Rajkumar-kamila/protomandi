@@ -75,7 +75,7 @@
   --border-6:#E6E6E6;
   --bg-1: #FFF5F4;
   --bg-2: #F6F6F6;
-  --bg-3: #FFF5F4;
+  --bg-3: #cfe2ff;
   --bg-6: #FCF7EE;
   --bg-7: rgba(10, 17, 30, 0.65);
   --bg-8: #F3F3F3;
@@ -6438,7 +6438,7 @@ input.main-search-input::placeholder {
   box-shadow: var(--box-shadow);
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-  background-color: #0a2946;
+  /* background-color: #0a2946; */
 
 }
 .sticky.sticky-bg-dark {
@@ -6470,7 +6470,7 @@ input.main-search-input::placeholder {
   display: none;
 }
 .sticky.header-6 .header-main .main-menu ul li a {
-  color: #fff;
+  color: var(--title);;
   padding: 30px 0;
 }
 .sticky.header-6 .header-main .sidebar__toggle {
@@ -6478,10 +6478,10 @@ input.main-search-input::placeholder {
   color: var(--bs-white) !important;
 }
 .sticky.header-6 .header-right .list li i {
-  color: #FFF;
+  color: var(--title);
 }
 .sticky.header-6 .header-right .list li a {
-  color: #fff;
+  color: var(--title);
 }
 .sticky.header-6 .header-right .list li button {
   color: var(--title);
@@ -8760,12 +8760,12 @@ textarea.is-invalid {
   text-align: center;
 }
 .best-seller-product-items-two__thumb img {
-  max-width: 100%;
+  max-width: 50%;
 }
 .best-seller-product-items-two__content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
 }
 .best-seller-product-items-two__details--subtitle {
@@ -8859,6 +8859,9 @@ textarea.is-invalid {
   display: block;
   font-family: "Space Grotesk", sans-serif!important;
   border-radius: 20px;
+  justify-items: center;
+  text-align: center;
+  transition: all 0.5s linear;
 }
 .best-seller-product-items-two.style-seller-3:hover {
   border: 3px solid var(--theme5);
@@ -10215,6 +10218,13 @@ textarea.is-invalid {
   display: flex;
   align-items: center;
   gap: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 14px 0px;
+  border-radius: 5px;
+  padding: 17px;
+}
+.feature-box-item-three:hover {
+  transform: scale(1.1);
+  transition: all 0.5s linear;
 }
 
 .feature-shop-wrapper {
@@ -17825,15 +17835,15 @@ button {
 	align-items: center;
 }
 .upload-files-container {
-	background-color: #f7fff7;
-	width: 420px;
-	padding: 30px 60px;
+	/* background-color: #f7fff7; */
+	width: 388px;
+	/* padding: 30px 60px; */
 	border-radius: 40px;
 	display: flex;
    	align-items: center;
    	justify-content: center;
 	flex-direction: column;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px, rgba(0, 0, 0, 0.28) 0px 6px 6px;
+	/* box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px, rgba(0, 0, 0, 0.28) 0px 6px 6px; */
 }
 .drag-file-area {
 	border: 2px dashed #0a2946;
@@ -18017,4 +18027,68 @@ button {
 .best-seller-product-items-two__content {
     margin-top: auto;
     padding: 10px 15px;
+}
+
+.feature-box-item-three__icon {
+    width: 60px;
+    height: 60px;
+    align-content: center;
+}
+
+/* how it work */
+
+.service-content {
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 32px 24px;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.service-number-bg {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    font-size: 140px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.03);
+    z-index: 0;
+    pointer-events: none;
+    animation: floatIn 1.2s ease-out;
+}
+
+.service-icon {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #004e92;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.service-text h6 {
+    font-family: "Space Grotesk", sans-serif;
+}
+.service-text h6 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.service-content:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 12px 28px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(208, 223, 255);
+    border-image: initial;
 }
