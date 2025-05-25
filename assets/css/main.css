@@ -6475,7 +6475,7 @@ input.main-search-input::placeholder {
 }
 .sticky.header-6 .header-main .sidebar__toggle {
   cursor: pointer;
-  color: var(--title) !important;
+  color: var(--bs-white) !important;
 }
 .sticky.header-6 .header-right .list li i {
   color: #FFF;
