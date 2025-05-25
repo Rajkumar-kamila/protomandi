@@ -50,9 +50,9 @@
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #FF4035;
+  --theme: #F97316;
   --theme2: #685EE1;
-  --theme3: #FF4035;
+  --theme3: #F97316;
   --theme4: #80B501;
   --theme5: #C97F5F;
   --theme6: #1CA8CB;
@@ -440,7 +440,7 @@ input[type=radio]:checked ~ label::before {
   gap: 10px;
   color: var(--white);
   font-family: "Space Grotesk", sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -3236,7 +3236,7 @@ img {
 .section-title .title.style3 {
   color: #161616;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 53.782px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 600;
   line-height: 60.504px;
@@ -10413,10 +10413,14 @@ textarea.is-invalid {
   background-color: var(--white);
   position: relative;
 }
+.feature-product-items-two:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
 .feature-product-items-two__thumb {
   text-align: center;
   border-radius: 20px 20px 0px 0px;
-  background: linear-gradient(180deg, var(--swiper-theme-color) 0%, var(--bs-gray-100) 100%);
+  /* background: linear-gradient(180deg, var(--swiper-theme-color) 0%, var(--bs-gray-100) 100%); */
   padding-top: 60px;
 }
 .feature-product-items-two__thumb img {
@@ -10428,6 +10432,10 @@ textarea.is-invalid {
   justify-content: space-between;
   margin-top: 20px;
   padding: 0px 30px 30px;
+}
+.feature-product-items-two__details{
+  justify-items: center;
+  text-align-last: center;
 }
 .feature-product-items-two__details--subtitle {
   color: #A1A1A1;
@@ -11233,10 +11241,12 @@ textarea.is-invalid {
   border-radius: 20px;
   transition: all 0.3s;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 14px 10px;
 }
 .product-box-items-three:hover {
   border-color: var(--theme4);
   box-shadow: var(--box-shadow);
+  transform: scale(1.1);
 }
 .product-box-items-three__icon {
   max-width: 66px;
@@ -11452,12 +11462,15 @@ textarea.is-invalid {
 
 .intro-wrapper.style1 {
   position: relative;
-  padding: 120px 74px 70px;
+  padding: 24px 74px 40px;
   border-radius: 40px;
   border: 1px solid rgba(10, 17, 30, 0.1);
-  background: #cfe2ff;
+  /* background: #cfe2ff; */
   overflow: hidden;
   margin-top: 20px;
+  background-image: url('../images/bannerbg.jpg');
+  background-position: center;
+  background-size: cover;
 
 }
 @media (max-width: 1199px) {
@@ -12376,7 +12389,7 @@ textarea.is-invalid {
 }
 
 #introSliderOne .slider-pagination {
-  margin-left: 220px;
+  /* margin-left: 220px; */
   margin-top: 50px;
 }
 @media (max-width: 767px) {
