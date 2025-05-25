@@ -6000,7 +6000,7 @@ input.main-search-input::placeholder {
   margin-left: 4px;
 }
 .header-6 .header-main .main-menu ul li a:hover {
-  color: var(--theme8) !important;
+  color: var(--theme) !important;
 }
 .header-6 .header-main .main-menu ul li .submenu {
   position: absolute;
