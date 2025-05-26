@@ -2778,7 +2778,7 @@ img {
   height: 16px;
   width: 16px;
   border-radius: 2px;
-  border: 1px solid var(--orange3);
+  border: 1px solid var(--bs-blue);
   top: 5px;
 }
 .checkbox-single .checkbox-area .checkmark::after {
@@ -17304,7 +17304,7 @@ button {
 .contact-section-wrapper {
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
-  background: var(--bg-1);
+  background: #cfe2ff3d;
   position: relative;
 }
 .contact-section-wrapper .contact-info {
@@ -17312,7 +17312,7 @@ button {
 }
 .contact-section-wrapper .contact-info__contact {
   padding: 40px 0px 36px 45px;
-  background-color: var(--theme3);
+  background-color: var(--title);
   border-radius: 10px;
   z-index: 9;
 }
@@ -17385,7 +17385,7 @@ button {
   background-color: var(--white);
 }
 .contact-section-wrapper .contact-info__contact--social-icon a i {
-  color: var(--theme3);
+  color: var(--title);
 }
 .contact-section-wrapper .contact-info__contact--social-icon a:hover {
   background-color: var(--theme2);
