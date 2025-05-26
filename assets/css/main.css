@@ -8283,7 +8283,7 @@ textarea.is-invalid {
 
 @media (min-width: 1400px) {
   .testimonial-slider-one {
-    margin-right: -250px;
+    /* margin-right: -250px; */
   }
 }
 .testimonial-slider-one .swiper-slide {
@@ -8739,6 +8739,7 @@ textarea.is-invalid {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.3s linear;
+  display: block;
 }
 .best-seller-product-items-two__badge1 {
   position: absolute;
@@ -8862,6 +8863,7 @@ textarea.is-invalid {
   justify-items: center;
   text-align: center;
   transition: all 0.5s linear;
+  align-content: center;
 }
 .best-seller-product-items-two.style-seller-3:hover {
   border: 3px solid var(--theme5);
