@@ -10257,7 +10257,7 @@ textarea.is-invalid {
 
 .featured-product-item-one__thumb {
   position: relative;
-  padding: 70px;
+  padding: 40px;
   border-radius: 20px;
   background: #F6F6F6;
   text-align: center;
@@ -10406,7 +10406,7 @@ textarea.is-invalid {
   align-items: center;
 }
 .featured-product-item-one:hover .featured-product-item-one__thumb {
-  border: 1px solid var(--theme3);
+  border: 1px solid #051247;
 }
 .featured-product-item-one:hover .featured-product-item-one__thumb .badge {
   opacity: 1;
