@@ -450,7 +450,7 @@ input[type=radio]:checked ~ label::before {
   line-height: 1;
   overflow: hidden;
   border: 1px solid transparent;
-  border-radius: 100px;
+  border-radius: 5px;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -647,7 +647,7 @@ input[type=radio]:checked ~ label::before {
   width: 210%;
   height: 290%;
   content: "";
-  top: 162%;
+  top: 190%;
   left: 50%;
   background: var(--bg-3);
   color: var(--title);
@@ -7377,7 +7377,7 @@ input[type=checkbox] ~ label:after {
   position: absolute;
   left: 6px;
   top: 9px;
-  background: var(--theme3);
+  background: var(--title);
   height: 8px;
   width: 8px;
   opacity: 0;
@@ -13588,7 +13588,7 @@ textarea.is-invalid {
 }
 .faq-content .accordion-item .accordion-header .accordion-button.collapsed {
   background-color: transparent;
-  padding: 25px 30px;
+  padding: 14px 30px;
 }
 .faq-content .accordion-item .accordion-collapse .accordion-body {
   padding-right: 150px;
@@ -14398,7 +14398,7 @@ span.select2-selection.select2-selection--single:focus {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding: 48px 0;
+  padding: 26px 0;
 }
 @media (max-width: 767px) {
   .breadcumb-wrapper {
@@ -15015,7 +15015,7 @@ button {
 .shop-details .product-big-img {
   text-align: center;
   padding-top: 50px;
-  background-color: #fff5f4;
+  /* background-color: #fff5f4; */
   border-radius: 20px;
 }
 .shop-details .product-about .rating {
@@ -16853,11 +16853,11 @@ button {
 
 .login-wrapper {
   border-radius: 50px;
-  background: var(--bg-1);
+  background: #9bc8f12b;
   position: relative;
 }
 .login-wrapper .contact-info-area {
-  padding: 100px 10px 70px 100px;
+  padding: 60px 60px 40px 60px;
 }
 @media (max-width: 1199px) {
   .login-wrapper .contact-info-area {
@@ -17004,12 +17004,13 @@ button {
 .login-wrapper .contact-info-area .contact-content .button-items-1 {
   display: flex;
   gap: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .login-wrapper .contact-info-area .contact-content .button-items-1__google-button {
-  padding: 16px 80px 16px 20px;
+  padding: 16px 20px 16px 20px;
   display: flex;
   gap: 20px;
   border-radius: 5px;
@@ -17057,7 +17058,7 @@ button {
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
-  margin-top: 34px;
+  margin-top: 20px;
 }
 .login-wrapper .contact-info-area .contact-content__logtitle a {
   color: var(--theme3);
@@ -17078,11 +17079,11 @@ button {
 
 .register-wrapper {
   border-radius: 50px;
-  background: var(--bg-1);
+  background: #9bc8f12b;
   position: relative;
 }
 .register-wrapper .contact-info-area {
-  padding: 100px 10px 70px 100px;
+  padding: 60px 60px 40px 60px;
 }
 @media (max-width: 1199px) {
   .register-wrapper .contact-info-area {
@@ -17229,12 +17230,13 @@ button {
 .register-wrapper .contact-info-area .contact-content .button-items-1 {
   display: flex;
   gap: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .register-wrapper .contact-info-area .contact-content .button-items-1__google-button {
-  padding: 16px 80px 16px 20px;
+  padding: 16px 20px 16px 20px;
   display: flex;
   gap: 20px;
   border-radius: 5px;
@@ -17282,7 +17284,7 @@ button {
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
-  margin-top: 34px;
+  margin-top: 20px;
 }
 .register-wrapper .contact-info-area .contact-content__logtitle a {
   color: var(--theme3);
@@ -17473,10 +17475,10 @@ button {
 }
 
 .map-items {
-  margin-bottom: -10px;
+  /* margin-bottom: -10px; */
 }
 .map-items .googpemap {
-  filter: grayscale(100%) invert(7%) contrast(83%);
+  /* filter: grayscale(100%) invert(7%) contrast(83%); */
 }
 .map-items .googpemap iframe {
   width: 100%;
